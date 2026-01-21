@@ -416,7 +416,7 @@
       const pLine = document.createElement("p");
       pLine.textContent = `${guess} → ${hit}H ${blow}B`;
       playerLog.prepend(pLine);
-
+      guessInput.value = "";
       if (hit === 4) {
         result.textContent = "YOU WIN!";
         submit.disabled = true;
@@ -499,4 +499,5 @@
     });
   </script>
 </body>
+
 </html>
